@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-sm border border-white/20;
+  }
+  
+  .color-swatch {
+    @apply w-16 h-16 rounded-lg shadow-md cursor-pointer transition-all duration-200 hover:scale-110 hover:shadow-lg;
+  }
+  
+  .upload-zone {
+    @apply border-2 border-dashed border-gray-300 rounded-lg p-8 text-center transition-all duration-200 hover:border-primary-400 hover:bg-primary-50/50;
+  }
+  
+  .upload-zone.dragover {
+    @apply border-primary-500 bg-primary-100/50;
+  }
+} 
