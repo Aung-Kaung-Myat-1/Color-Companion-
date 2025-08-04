@@ -26,12 +26,12 @@ build/
 Thumbs.db
 
 # Large dataset files (too big for GitHub)
-public/DataSet/
-public/DataSet/images/
-public/DataSet/images/images/
-DataSet/
-DataSet/resized/
-DataSet/resized/resized/
+# public/DataSet/
+# public/DataSet/images/
+# public/DataSet/images/images/
+# DataSet/
+# DataSet/resized/
+# DataSet/resized/resized/
 
 # Logs
 *.log
